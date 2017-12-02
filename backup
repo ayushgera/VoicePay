@@ -1,0 +1,30 @@
+{
+    "beneficiaryAccountMap" : {
+        "6e08daee-db1f-429d-bada-e85821653f66" : {
+            "name": "ayush",
+            "customerID": "438726115"
+        },
+        "332127b5-14da-43a2-bf43-443181a1ced9" : {
+            "name" : "ravneet",
+            "customerID": "438726115"
+        },
+        "7bda13bc-ac4b-401a-bc4e-24c26fd0c828" : {
+            "name": "amarjot",
+            "customerID": "444732121"
+        }
+    }
+}
+
+
+{
+    "beneficiaryAccountMap" : {
+        "7ea17532-ff2c-404e-aa53-c97a6ef9b4cc" : {
+            "name" : "ayush",
+            "customerID": "438726115"
+        },
+        "332127b5-14da-43a2-bf43-443181a1ced9" : {
+            "name" : "ravneet",
+            "customerID": "438726115"
+        }
+    }
+}

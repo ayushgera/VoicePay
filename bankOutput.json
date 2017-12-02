@@ -1,0 +1,24 @@
+{
+  "output": [
+    {
+      "Account_Number": "00430100001323",
+      "Type_of_account": "SBA",
+      "Branch_in_which_Account": 43,
+      "Acct_Status": "A",
+      "Account_Opening_Branch": 43,
+      "Scheme_Code": "SB112",
+      "Account_Name": "Ghoda Ulhas Kampan",
+      "Account_Opn_Date": 20010131,
+      "Ledger_Balance": 0,
+      "Available_Balance": 1028.73,
+      "Funds_in_clearings": 1940.75,
+      "Drawing_Power": 53276.31,
+      "Lien_Amt": 0,
+      "Customer_Name": "Ghoda Ulhas Kampan",
+      "Joint_Holder_Name_1": null,
+      "Joint_Holder_Name_2": "NA",
+      "Joint_Holder_Name_3": "NA",
+      "Mode_of_Operation": "SELF"
+    }
+  ]
+}

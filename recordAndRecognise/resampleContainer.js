@@ -1,0 +1,1 @@
+resampleContainer = require('audio-resampler');

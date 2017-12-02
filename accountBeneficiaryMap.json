@@ -1,0 +1,12 @@
+{
+    "ravneet" : {
+        "customerId" : "",
+        "accountNumber" : "",
+        "voiceProfileId" : ""
+    },
+    "amit" : {
+        "customerId" : "",
+        "accountNumber" : "",
+        "voiceProfileId" : ""
+    }
+}
