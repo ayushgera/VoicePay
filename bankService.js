@@ -21,16 +21,6 @@ var getMiniStatement = function(accountNumber){
         headers: getHeader(),
         json: true
     };
-
-    /*request(options)
-        .then(function (parsedBody) {
-            // POST succeeded
-            console.log(parsedBody);
-        })
-        .catch(function (err) {
-            // POST failed
-            console.log(err);
-        });*/
 }
 
 //get transaction 4 account
@@ -218,18 +208,6 @@ var getAccountDetails = function(accountNumber){
     };
 
     setBankOutput("accountDetails", {Available_Balance: 1000});
-    /*
-    request(options)
-        .then(function (parsedBody) {
-            // change to handle all acounts later
-            if(parsedBody && parsedBody[0]){
-                setBankOutput("accountDetails", parsedBody[0]);
-            }
-        })
-        .catch(function (err) {
-            // POST failed
-            console.log(err);
-    });*/
 }
 
 //get customer account details
@@ -273,20 +251,6 @@ var makeBillPayment = function(customerId, billerId, amount){
     //set invoice id
     setBankOutput("billInvoice", "123123123");
     getAccountDetails();
-
-    /*request(options)
-        .then(function (parsedBody) {
-            // POST succeeded
-            console.log(parsedBody);
-            if(parsedBody && parsedBody[0] && parsedBody[0].Ser_Req_NUM){
-                setBankOutput("billInvoice", parsedBody[0].Ser_Req_NUM);
-                getAccountDetails();
-            }
-        })
-        .catch(function (err) {
-            // POST failed
-            console.log(err);
-    });*/
 }
 
 var billPaymentByBillerName = function(billerName, customerId, amount){
@@ -308,29 +272,6 @@ var billPaymentByBillerName = function(billerName, customerId, amount){
         return;
     }
     makeBillPayment(customerId, foundBiller.Biller_ID, amount);
-    
-    /*request({
-        method: 'POST',
-        uri: createURL('GetBillers'),
-        body: {
-            "Customer_Id": customerId || "456744133"
-        },
-        headers: getHeader(),
-        json: true
-    }).then(function(response){
-        //find the biller with the given name
-        var foundBiller; //Calcible
-        if(response && response.length>0){
-            console.log(JSON.stringify(response));
-            foundBiller= response.filter(function(biller){
-                return biller.Biller_Name.toLowerCase() === billerName.toLowerCase();
-            });
-        }
-        if(!foundBiller){
-            return;
-        }
-        makeBillPayment(customerId, foundBiller.Biller_ID, amount);
-    });*/
 }
 
 var customerToCustomerTransaction = function(debitAccount,CreditAccount,amount,message){
@@ -349,23 +290,6 @@ var customerToCustomerTransaction = function(debitAccount,CreditAccount,amount,m
 
     global.APIResult.trasnferStatus = "success";
     getAccountDetails("29040100001234"); 
-    /*
-    request(options)
-        .then(function (parsedBody) {
-            // POST succeeded
-            console.log(parsedBody);
-            if(parsedBody && parsedBody[0] && parsedBody[0].Trans_Status==="OK"){
-                global.APIResult.trasnferStatus = "success";
-                getAccountDetails("29040100001234"); 
-            }else{
-                global.APIResult.trasnferStatus = "failed";
-            }
-        })
-        .catch(function (err) {
-            // POST failed
-            console.log(err);
-            global.APIResult.trasnferStatus = "failed";
-    });*/
 }
 
 function getHeader(){

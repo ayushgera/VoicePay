@@ -292,21 +292,6 @@ var completeIdentification = function(fileName){
 var getGlobalStorage = function(){
     return global._storage;
 }
-//identificationProfileCreateProfileImpl();
-//identificationProfileCreateEnrollmentImpl('c11e30c2-7d4c-4224-8966-27733ef4a833',"ravneet-register.wav");
-//completeRegistration("ravneet-register.wav");
-//speakerRecognitionGetStatusImpl("3a10ead6-88f3-4d61-af88-9c1bea47c226")
-//completeIdentification("amarjot_b4824d6b3a1eef6ab62f3a177eef8e9d.wav");
-//speakerRecognitionGetStatusImpl("6e88e03c-f652-4283-a00f-87349ea8771f");
-//speakerRecognitionIdentificationImpl("ayush_427c2335a83cdcb4b3f554c739fa7e6c.wav");
-//client.identificationProfileGetAll().then(function(res){console.log(res)});
-//client.identificationProfileGet("9bf9120f-fefe-4db3-a9ed-552d14d7f13").then(function(res){console.log(res)})
-/*client.identificationProfileDeleteProfile({
-    parameters : {
-        "identificationProfileId" : "a3159451-6433-42be-93fa-e4c6c5ed8cc9"
-    }
-});*/
-
 
 module.exports= {
         verificationProfileGetAllProfilesImpl: verificationProfileGetAllProfilesImpl,
